@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!--Header-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script type="text/javascript" src="JS/smooth-scroll.js"></script>
+	<title>10C1 | Home</title>
+	<link rel="icon" type="image/x-icon" href="./Assets/ico.png">
+	<link rel="stylesheet" type="text/css" href="./Style.css">
+	<link rel="stylesheet" type="text/css" href="./Css/Style-selection.css">
+</head>
+<body>
+	<main>
+		<header class="header">
+			<div class="menu">
+				<a href="#">10C1</a>
+			</div>
+			<nav class="navbar">
+				<a href="#">Thành Viên</a>
+				<a href="#">Kỷ Niệm</a>
+				<a href="#">Thời Gian</a>
+			</nav>
+			<div class="toggle">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			<nav class="drop_navbar">
+				<a href="#">Thành Viên</a>
+				<a href="#">Kỷ Niệm</a>
+				<a href="#">Thời Gian</a>
+			</nav>
+		</header>
+<!--Body-1-->
+		<div class="slide slide1"></div>
+		<section>
+			<div class="cardbox">
+				<h1 class="hello">Hello, Welcome to 10C1</h1>
+				<p>From Hong Bang High School.</p>
+				<button onclick="window.location.href='https://www.facebook.com/profile.php?id=61550578679079';" type="button" class="facebook">
+					<i class="fa-brands fa-facebook"></i>  Facebook
+				</button>
+				<button onclick="new.window.location.href='blank';" type="button" class="youtube">
+					<i class="fa-brands fa-youtube"></i>  Youtube
+				</button>
+				<button onclick="window.location.href='blank';" type="button" class="discord">
+					<i class="fa-brands fa-discord"></i>  Discord
+				</button>
+				<button onclick="window.location.href='blank';" type="button" class="github">
+					<i class="fa-brands fa-github"></i>  Github
+				</button>
+			</div>
+		</section>
+<!--Body-2-->
+		<div class="slide slide2">
+			<div class="information">
+				<div class="text">
+					<div class="content">
+						<h4>
+							<p>Some infos about class</p>
+						</h4>
+						<ul>
+							<li>• Students from Hong Bang High School, class 2023-2026.</li>
+							<li>• Study on the 1st floor of building B.</li>
+							<li>• The homeroom teacher is Huyen Trang.</li>
+							<li>• The class has a total of 47 students and all of them are funny and friendly.</li>
+							<li>• Our class likes moba, fps, survival,... game genres like valorant, AOV, League of Legends, Minecraft, Roblox,...</li>
+						</ul>
+					</div>
+				</div>
+				<div class="img">
+					<img src="Assets/lop10c1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<section>
+			<div class="item">
+				
+			</div>
+		</section>
+		<!--NAVBAR-Script-->
+		<script>
+			const toggle = document.querySelector('.toggle')
+			const toggleIcon = document.querySelector('.toggle i')
+			const toggleDropMenu = document.querySelector('.drop_navbar')
+
+			toggle.onclick = function () {
+				toggleDropMenu.classList.toggle('open')
+
+				toggleIcon.classList = isOpen
+					? 'fa-solid fa-bars'
+					: 'fa-solid fa-xmark'
+			}
+		</script>
+	</main>
+</body>
+<footer>
+	<div class="footer">
+		<div class="footercontainer">
+			<div class="socialfooter">
+				<a href=""><i class="fa-brands fa-facebook"></i></a>
+				<a href=""><i class="fa-brands fa-youtube"></i></a>
+				<a href=""><i class="fa-brands fa-discord"></i></a>
+				<a href=""><i class="fa-brands fa-github"></i></a>
+			</div>
+			<div class="navfooter">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Member</a></li>
+					<li><a href="">Memories</a></li>
+					<li><a href="">Time</a></li>
+				</ul>
+			</div>
+			<div class="bottomfooter">
+				<p>© Copyright 2023 10C1.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
